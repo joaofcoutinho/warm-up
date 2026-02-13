@@ -19,7 +19,7 @@ export default function Experience() {
 
         {/* Title + Text */}
         <div>
-          <h2 className="mb-4 font-sans text-2xl font-light tracking-tight text-white sm:text-3xl lg:text-[2.5rem]">
+          <h2 className="mb-4 font-sans text-2xl font-light tracking-tight text-white whitespace-pre-line sm:text-3xl lg:text-[2.5rem]">
             {EXPERIENCE_CONTENT.title}
           </h2>
           <div className="mb-6 flex items-center gap-3">

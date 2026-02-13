@@ -92,7 +92,7 @@ export default function Disruption() {
           </p>
         </div>
 
-        <p className="text-center font-sans text-lg font-medium leading-relaxed text-white/80 sm:text-xl">
+        <p className="text-center text-balance font-sans text-lg font-medium leading-relaxed text-white/80 sm:text-xl">
           {DISRUPTION_CONTENT.closing}
         </p>
       </div>

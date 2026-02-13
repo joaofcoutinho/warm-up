@@ -72,7 +72,7 @@ export default function CountdownBanner() {
           para o Warm-Up Day
         </span>
         <a
-          href="#ingressos"
+          href="https://bit.ly/enjoy-warm-up"
           className="ml-2 hidden rounded bg-gold px-3 py-1 text-xs font-bold uppercase text-navy-dark transition-all hover:brightness-110 sm:block"
         >
           Inscreva-se

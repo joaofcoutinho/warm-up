@@ -5,7 +5,7 @@ export const HERO_CONTENT = {
   subtitle:
     "O aquecimento oficial que prepara os grandes para o ápice do mercado em 2026",
   date: "04/Março",
-  location: "Vitória/ES",
+  location: "Casa Vilani, Mata da Praia/ES",
   bullets: [
     "Visão estratégica",
     "Conexões qualificadas",
@@ -46,7 +46,7 @@ export const ECOSYSTEM_CONTENT = {
 };
 
 export const EXPERIENCE_CONTENT = {
-  title: "A EXPERIÊNCIA WARM-UP DAY",
+  title: "A EXPERIÊNCIA\nWARM-UP DAY",
   paragraphs: [
     "O Warm-Up Day é uma tarde intensa de conteúdo, mentorias e networking qualificado.",
     "Cada momento é pensado para ampliar visão, provocar reflexões aplicáveis e fortalecer relações entre empresários que desejam iniciar 2026 com mais clareza e preparo.",

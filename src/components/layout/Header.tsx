@@ -45,7 +45,7 @@ export default function Header() {
             Disruption
           </a>
           <a
-            href="#ingressos"
+            href="https://bit.ly/enjoy-warm-up"
             className="rounded-lg bg-gold px-4 py-2 text-sm font-bold text-navy-dark transition-all hover:brightness-110"
           >
             Inscreva-se

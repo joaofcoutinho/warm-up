@@ -13,13 +13,13 @@ export default function FinalCTA() {
         <h2 className="mb-6 font-sans text-2xl font-light tracking-tight text-white sm:text-3xl lg:text-[2.5rem]">
           {FINAL_CTA_CONTENT.title}
         </h2>
-        <p className="mb-4 font-body text-base leading-relaxed text-white/70 sm:text-lg">
+        <p className="mb-4 text-balance font-body text-base leading-relaxed text-white/70 sm:text-lg">
           {FINAL_CTA_CONTENT.description}
         </p>
-        <p className="mb-10 font-body text-base leading-relaxed text-white/80 sm:text-lg">
+        <p className="mb-10 text-balance font-body text-base leading-relaxed text-white/80 sm:text-lg">
           {FINAL_CTA_CONTENT.subdescription}
         </p>
-        <Button variant="primary" size="lg" href="#ingressos">
+        <Button variant="primary" size="lg" href="https://bit.ly/enjoy-warm-up">
           {FINAL_CTA_CONTENT.cta}
         </Button>
       </div>

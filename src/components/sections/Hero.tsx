@@ -65,7 +65,7 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="animate-fade-up mb-16" style={{ animationDelay: "0.8s" }}>
-          <Button variant="primary" size="lg" href="#ingressos">
+          <Button variant="primary" size="lg" href="https://bit.ly/enjoy-warm-up">
             {HERO_CONTENT.cta}
           </Button>
         </div>

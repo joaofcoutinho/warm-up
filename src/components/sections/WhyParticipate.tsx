@@ -30,8 +30,10 @@ export default function WhyParticipate() {
         <span className="h-px w-12 bg-gradient-to-l from-transparent to-gold/40" />
       </div>
 
+      <div ref={trackRef} />
+
       {/* Mobile: vertical */}
-      <div ref={trackRef} className="sm:hidden flex flex-col items-start gap-0 px-4">
+      <div className="sm:hidden flex flex-col items-start gap-0 px-4">
         {WHY_PARTICIPATE.reasons.map((reason, i) => {
           const isLast = i === WHY_PARTICIPATE.reasons.length - 1;
           return (
