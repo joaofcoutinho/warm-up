@@ -30,18 +30,71 @@ export default function WhyParticipate() {
         <span className="h-px w-12 bg-gradient-to-l from-transparent to-gold/40" />
       </div>
 
-      {/* Horizontal scroll track */}
-      <div ref={trackRef} className="-mx-4 overflow-x-auto px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:overflow-visible lg:px-0">
+      {/* Mobile: vertical */}
+      <div ref={trackRef} className="sm:hidden flex flex-col items-start gap-0 px-4">
+        {WHY_PARTICIPATE.reasons.map((reason, i) => {
+          const isLast = i === WHY_PARTICIPATE.reasons.length - 1;
+          return (
+            <div key={i} className="relative flex items-start gap-4">
+              {/* Number circle + vertical line */}
+              <div className="flex flex-col items-center">
+                <div
+                  className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 transition-all duration-700 ${
+                    visible
+                      ? "border-gold bg-gold/15 shadow-[0_0_25px_rgba(177,140,84,0.2)]"
+                      : "border-white/10 bg-transparent"
+                  }`}
+                  style={{ transitionDelay: `${i * 200}ms` }}
+                >
+                  <span
+                    className={`font-sans text-base font-bold transition-all duration-700 ${
+                      visible ? "text-gold" : "text-white/20"
+                    }`}
+                    style={{ transitionDelay: `${i * 200}ms` }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                {!isLast && (
+                  <div className="w-px flex-1 min-h-[32px]">
+                    <div
+                      className={`w-full h-full bg-gradient-to-b from-gold/40 to-gold/20 transition-all duration-1000 origin-top ${
+                        visible ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
+                      }`}
+                      style={{ transitionDelay: `${i * 200 + 100}ms` }}
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* Text */}
+              <div
+                className={`pt-3 pb-6 transition-all duration-700 ${
+                  visible
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-4 opacity-0"
+                }`}
+                style={{ transitionDelay: `${i * 200 + 150}ms` }}
+              >
+                <p className="font-body text-sm leading-relaxed text-white/70">
+                  {reason}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Desktop: horizontal */}
+      <div className="hidden sm:block -mx-4 overflow-x-auto px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:overflow-visible lg:px-0">
         <div className="relative mx-auto flex min-w-[900px] items-start gap-0 lg:min-w-0 lg:max-w-5xl">
           {WHY_PARTICIPATE.reasons.map((reason, i) => {
             const isLast = i === WHY_PARTICIPATE.reasons.length - 1;
-
             return (
               <div
                 key={i}
                 className="relative flex flex-1 flex-col items-center text-center"
               >
-                {/* Number circle */}
                 <div
                   className={`relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 transition-all duration-700 ${
                     visible
@@ -60,7 +113,6 @@ export default function WhyParticipate() {
                   </span>
                 </div>
 
-                {/* Connecting line */}
                 {!isLast && (
                   <div className="absolute left-[calc(50%+28px)] top-7 h-px right-[calc(-50%+28px)]">
                     <div
@@ -72,7 +124,6 @@ export default function WhyParticipate() {
                   </div>
                 )}
 
-                {/* Text */}
                 <div
                   className={`mt-5 max-w-[160px] transition-all duration-700 ${
                     visible
