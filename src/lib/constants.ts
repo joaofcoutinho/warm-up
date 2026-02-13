@@ -102,7 +102,7 @@ export const DISRUPTION_CONTENT = {
 };
 
 export const FINAL_CTA_CONTENT = {
-  title: "CHAMADA FINAL",
+  title: "Quais decisões hoje estão separando seu negócio do crescimento que você quer viver em 2026?",
   description:
     "O Warm-Up Day é o aquecimento que prepara empresários para decisões maiores, conexões mais estratégicas e um novo ciclo de crescimento.",
   subdescription:
