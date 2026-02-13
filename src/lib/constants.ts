@@ -99,6 +99,20 @@ export const DISRUPTION_CONTENT = {
   closing:
     "O Warm-Up Day amplia sua preparação e fortalece sua jornada rumo a esse próximo nível.",
   videoId: "rM-QElLoXck",
+  speakers: [
+    {
+      name: "Diego\nRibas",
+      role: "Ex-jogador profissional, multicampeão",
+      bio: "Referência em liderança, disciplina e alta performance. Ao longo de sua carreira, Diego atuou em ambientes de extrema pressão, liderou equipes em contextos decisivos e construiu uma trajetória marcada por consistência e responsabilidade sobre resultados.",
+      imageSrc: "/diego.png",
+    },
+    {
+      name: "Alfredo\nSoares",
+      role: "Fundador da G4 Educação",
+      bio: "Uma das principais referências em vendas, posicionamento e execução no Brasil. Responsável pela construção de um ecossistema educacional com faturamento superior a R$ 500 milhões em 2025, impactando milhares de empresários em todo o país.",
+      imageSrc: "/images/alfredo.png",
+    },
+  ],
 };
 
 export const FINAL_CTA_CONTENT = {
